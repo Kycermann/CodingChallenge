@@ -58,7 +58,7 @@ Each secret can only have one active connection at a time.
 }
 
 ### Movement
-
+```
 {
   "type: "move",
 
@@ -66,37 +66,37 @@ Each secret can only have one active connection at a time.
   "directionX": oneOf(-1, 0, 1),
   "directionY": oneOf(-1, 0, 1)
 }
-
+```
 ### Attack
-
+```
 {
   "type": "attack"
 }
-
+```
 You will attack a random player within 1 square of you, if there is one.
 
 ### Eat
-
+```
 {
   "type": "eat",
   "apples": number
 }
-
+```
 You will eat n apples, if you have them.
 
 ### Smash
-
+```
 {
   "type": "smash",
   "apples": number
 }
-
+```
 You will smash n apples, if you have them.
 
 ## Packets sent from the server
 
 ### Set map state
-
+```
 {
   "type": "setMapState",
 
@@ -116,7 +116,7 @@ You will smash n apples, if you have them.
     "apples": number
   }
 }
-
+```
 ### Disconnect
 
 If you are disconnected, you will be sent a reason for the disconnection as a string. If you had the new high score, the reason will include this information.
